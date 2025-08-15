@@ -181,6 +181,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   margin: 0;
 }
 
+.number-counter-above {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #000;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.1em;
+}
+
 .number-counter {
   position: absolute;
   bottom: 3rem;
@@ -250,10 +262,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   font-size: 0.875rem;
   font-weight: 600;
   color: #000;
-  writing-mode: vertical-rl;
+  writing-mode: horizontal-tb;
   text-orientation: mixed;
   letter-spacing: 0.1em;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .full-height-rectangle {
