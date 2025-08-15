@@ -338,6 +338,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   overflow: hidden;
   margin-top: 0;
   position: relative;
+  will-change: transform;
 }
 
 .text-scroll-text {
@@ -349,6 +350,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   text-transform: uppercase;
   white-space: nowrap;
   line-height: 1;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /* Mobile Responsive Design */

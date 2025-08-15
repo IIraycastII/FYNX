@@ -31,7 +31,7 @@ const TextScroll = ({
       stiffness: 400,
     })
 
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 3], {
       clamp: false,
     })
 
@@ -44,7 +44,7 @@ const TextScroll = ({
         if (containerRef.current && textRef.current) {
           const containerWidth = containerRef.current.offsetWidth
           const textWidth = textRef.current.offsetWidth
-          const newRepetitions = Math.ceil(containerWidth / textWidth) + 2
+          const newRepetitions = Math.ceil(containerWidth / textWidth) + 3
           setRepetitions(newRepetitions)
         }
       }
@@ -59,9 +59,9 @@ const TextScroll = ({
 
     const directionFactor = useRef(1)
     useAnimationFrame((t, delta) => {
-      // Only move when scrolling
+      // Only move when scrolling with higher threshold
       const currentVelocity = velocityFactor.get()
-      if (Math.abs(currentVelocity) > 0.1) {
+      if (Math.abs(currentVelocity) > 0.3) {
         let moveBy = directionFactor.current * baseVelocity * (delta / 1000)
 
         if (currentVelocity < 0) {
@@ -70,7 +70,8 @@ const TextScroll = ({
           directionFactor.current = 1
         }
 
-        moveBy += directionFactor.current * moveBy * currentVelocity
+        // Smoother velocity integration
+        moveBy += directionFactor.current * moveBy * Math.min(currentVelocity, 2)
 
         baseX.set(baseX.get() + moveBy)
       }
