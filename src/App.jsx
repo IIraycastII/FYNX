@@ -10,7 +10,7 @@ function App() {
         </div>
         
         <nav className="header-nav">
-          <a href="#" className="nav-link">INFO</a>
+          <a href="#" className="nav-link">AWTS</a>
           <a href="#" className="nav-link">SHOP</a>
           <a href="#" className="nav-link">
             NEW ARRIVALS
@@ -26,9 +26,11 @@ function App() {
       <main className="main-content">
         <div className="left-section">
           <h1 className="main-title">FNYX.</h1>
-          <div className="number-counter-above">001</div>
           <div className="transparent-boxes">
-            <div className="transparent-box"></div>
+            <div className="transparent-box">
+              <div className="project-counter">+1</div>
+              <div className="projects-text">PROJECTS</div>
+            </div>
             <div className="transparent-box"></div>
             <div className="transparent-box"></div>
           </div>
