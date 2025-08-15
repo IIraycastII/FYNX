@@ -7,8 +7,6 @@ function App() {
       {/* Header */}
       <header className="header">
         <div className="header-left">
-          <span className="project-counter">+1</span>
-          <span className="projects-text">PROJECTS</span>
         </div>
         
         <nav className="header-nav">
@@ -29,7 +27,10 @@ function App() {
         <div className="left-section">
           <h1 className="main-title">FNYX.</h1>
           <div className="transparent-boxes">
-            <div className="transparent-box"></div>
+            <div className="transparent-box">
+              <div className="project-counter">+1</div>
+              <div className="projects-text">PROJECTS</div>
+            </div>
             <div className="transparent-box"></div>
             <div className="transparent-box"></div>
           </div>

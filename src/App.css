@@ -49,9 +49,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  position: absolute;
-  top: 2rem;
-  left: 3rem;
 }
 
 .project-counter {
@@ -110,7 +107,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   min-height: 100vh;
   width: 100vw;
   padding-top: 6rem;
-  padding-right: 80px;
+  padding-right: 100px;
   position: relative;
 }
 
@@ -138,7 +135,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 .transparent-boxes {
   position: absolute;
-  left: 2rem;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -153,6 +150,27 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.transparent-box .project-counter {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.transparent-box .projects-text {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
 }
 
 .number-counter {
