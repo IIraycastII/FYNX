@@ -1,6 +1,5 @@
 import './App.css'
 import { TextScroll } from './components/ui/text-scroll'
-import featuredImg from './public/image_home_page/img1.png'
 
 function App() {
   return (
@@ -43,7 +42,7 @@ function App() {
         <div className="right-section">
           <div className="orange-block"></div>
           <img 
-            src={featuredImg}
+            src="/image_home_page/img1.png"
             alt="Featured image" 
             className="featured-image"
           />
