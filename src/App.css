@@ -49,6 +49,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1;
 }
 
 .project-counter {
@@ -65,8 +66,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 .header-nav {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .nav-link {
@@ -77,15 +80,20 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
 }
 
 .arrow {
   font-size: 0.75rem;
+  margin-left: 0.25rem;
 }
 
 .header-right {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .menu-dots {
@@ -350,7 +358,12 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   }
 
   .header-nav {
-    display: none; /* Hide navigation on mobile */
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .main-content {
@@ -456,6 +469,15 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 @media (max-width: 480px) {
   .header {
     padding: 0.75rem 1rem;
+  }
+
+  .header-nav {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.7rem;
+    padding: 0.25rem;
   }
 
   .main-title {
