@@ -330,6 +330,803 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   background-color: #ced4da;
 }
 
+/* Product Sections */
+.premium-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 8rem 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  color: #000;
+}
+
+/* Section Header Tech Style */
+.section-header-tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.header-left-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tech-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tech-btn {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.tech-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.tech-shop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech-thumbnail {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.tech-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vertical-text-tech {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.tech-action-circle {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tech-action-circle:hover {
+  transform: scale(1.1);
+}
+
+.tech-arrow {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tech-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tech-dots span {
+  width: 4px;
+  height: 4px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.header-right-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tech-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
+
+.tech-stats {
+  text-align: right;
+  max-width: 300px;
+}
+
+.tech-stats p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.tech-view-modes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-mode {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-mode:hover {
+  background: #000;
+}
+
+/* Hero Content Tech Style */
+.hero-content-tech {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tech-connection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashed-line {
+  width: 2px;
+  height: 100px;
+  border-left: 2px dashed #000;
+}
+
+.connection-dot {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.connection-line {
+  width: 60px;
+  height: 2px;
+  background: #000;
+}
+
+.connection-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  max-width: 120px;
+}
+
+.tech-bracket {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tech-warning {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.main-product-display {
+  width: 400px;
+  height: 600px;
+  border: 2px solid #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.size-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.size-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.year-indicator {
+  font-size: 1.2rem;
+  font-weight: 900;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+}
+
+/* Section Footer Tech Style */
+.section-footer-tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.tech-barcode {
+  width: 200px;
+  height: 40px;
+  background: repeating-linear-gradient(
+    90deg,
+    #000 0px,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  margin-bottom: 2rem;
+}
+
+.tech-headline {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.tech-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.tech-shop-btn {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tech-shop-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.tech-features {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature-item {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scroll-arrow {
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  transform: scale(1.2);
+}
+
+.scroll-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.product-gallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.gallery-heart {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+
+/* Section-specific backgrounds */
+.anime-section {
+  background: #f8f9fa;
+}
+
+.greek-section {
+  background: #e9ecef;
+}
+
+.music-section {
+  background: #dee2e6;
+}
+
+.about-section {
+  background: #000;
+  color: #fff;
+}
+
+/* X-MECHS Style About Section */
+.x-mechs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.x-mechs-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.x-mechs-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.x-mechs-small {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.x-mechs-main {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.x-mechs-copyright {
+  font-size: 0.7rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.x-mechs-logo {
+  width: 30px;
+  height: 30px;
+  background: #ff4500;
+  border-radius: 4px;
+}
+
+.x-mechs-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.x-mechs-character {
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+
+.character-outline {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-head {
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.character-head::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+}
+
+.character-body {
+  width: 120px;
+  height: 200px;
+  background: #333;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.character-arms {
+  width: 200px;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.character-legs {
+  width: 100px;
+  height: 150px;
+  background: #333;
+  border-radius: 20px;
+}
+
+.neon-accents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.neon-splatter {
+  position: absolute;
+  border-radius: 50%;
+  background: #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  animation: neon-glow 2s ease-in-out infinite alternate;
+}
+
+.neon-1 {
+  width: 40px;
+  height: 40px;
+  top: 20%;
+  left: 10%;
+}
+
+.neon-2 {
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  right: 15%;
+}
+
+.neon-3 {
+  width: 50px;
+  height: 50px;
+  bottom: 20%;
+  left: 20%;
+}
+
+@keyframes neon-glow {
+  0% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+.x-mechs-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.x-mechs-graphic {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #333, #666);
+  border-radius: 10px;
+  position: relative;
+}
+
+.x-mechs-graphic::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.x-mechs-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.x-mechs-year,
+.x-mechs-code,
+.x-mechs-status,
+.x-mechs-platform,
+.x-mechs-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.x-mechs-status {
+  color: #00ff00;
+}
+
+.x-mechs-warnings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.warning-item {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ff0000;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.warning-icon {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.x-mechs-cta {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff4500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* About Content Tech Style */
+.about-content-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.about-left-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title-tech {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.about-description-tech {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.about-features-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-tech {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-icon-tech {
+  font-size: 2rem;
+  margin-top: 0.25rem;
+}
+
+.feature-text-tech h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text-tech p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.about-right-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contact-info-tech h3,
+.social-links-tech h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contact-item-tech {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-label-tech {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff4500;
+  min-width: 80px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-link-tech,
+.contact-text-tech {
+  font-size: 1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link-tech:hover {
+  color: #ff4500;
+}
+
+.social-icons-tech {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icon-tech {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.social-icon-tech:hover {
+  color: #ff4500;
+  border-color: #ff4500;
+}
+
 /* Text Scroll Container */
 .text-scroll-container {
   width: 100%;
@@ -464,6 +1261,82 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   .section-content p {
     font-size: 1rem;
   }
+
+  /* Premium Sections Mobile */
+  .premium-section {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .section-header-tech {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .header-right-tech {
+    align-items: flex-start;
+  }
+
+  .tech-stats {
+    text-align: left;
+  }
+
+  .hero-content-tech {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .main-product-display {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+  }
+
+  .section-footer-tech {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .tech-headline {
+    font-size: 2rem;
+  }
+
+  .x-mechs-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .x-mechs-character {
+    width: 200px;
+    height: 300px;
+  }
+
+  .about-content-tech {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .about-title-tech {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .contact-item-tech {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .social-icons-tech {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -503,5 +1376,51 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
   .section-content h2 {
     font-size: 1.5rem;
+  }
+
+  /* Premium Sections Small Mobile */
+  .premium-section {
+    padding: 5rem 0.5rem 2rem;
+  }
+
+  .tech-buttons {
+    gap: 0.25rem;
+  }
+
+  .tech-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .tech-thumbnail {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-action-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main-product-display {
+    height: 300px;
+  }
+
+  .tech-headline {
+    font-size: 1.5rem;
+  }
+
+  .tech-shop-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .x-mechs-main {
+    font-size: 2rem;
+  }
+
+  .x-mechs-character {
+    width: 150px;
+    height: 200px;
   }
 }
